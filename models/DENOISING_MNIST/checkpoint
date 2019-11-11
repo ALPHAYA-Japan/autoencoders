@@ -1,0 +1,2 @@
+model_checkpoint_path: "DENOISING"
+all_model_checkpoint_paths: "DENOISING"

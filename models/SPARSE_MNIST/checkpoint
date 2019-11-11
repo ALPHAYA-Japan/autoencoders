@@ -1,0 +1,2 @@
+model_checkpoint_path: "SPARSE"
+all_model_checkpoint_paths: "SPARSE"
