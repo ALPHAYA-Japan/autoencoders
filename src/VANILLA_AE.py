@@ -189,7 +189,8 @@ class VANILLA_AE:
     def train(self, max_epoches, show_images = False):
         prev_t_loss= sys.float_info.max # set it to the maximum
         prev_v_loss= sys.float_info.max # set it to the maximum
-        f, a = plt.subplots(4, 10, figsize=(10, 4))
+        if show_images == True:
+            f, a = plt.subplots(4, 10, figsize=(10, 4))
 
         for epoch in range(max_epoches):
             for i in range(self.num_batches):

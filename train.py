@@ -8,7 +8,6 @@
 '''
 
 import sys
-import cv2
 from src.VANILLA_AE   import VANILLA_AE
 from src.STACKED_AE   import STACKED_AE
 from src.CONV_AE      import CONV_AE
@@ -43,7 +42,7 @@ if __name__ == "__main__":
         sys.exit()
 
     # ...........................................
-    data_path   = 'data/MNIST/train_data/'          # training data location (see README)
+    data_path   = '../data/MNIST/train_data/'       # training data location (see README)
     model_path  = 'models/'+model+'_MNIST/'         # specify where you wanna save your model
 
     # ...........................................

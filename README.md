@@ -55,7 +55,7 @@ Note: 1st and 3rd rows represent the ground truth whereas the 2nd and 4th rows a
 :---: | :---: | :---: | :---: |
 Vanilla_AE | <img src='./images/VANILLA/grid_1.png' height='150px'> | <img src='./images/VANILLA/grid_15.png' height='150px'> | <img src='./images/VANILLA/grid_30.png' height='150px'>
 Stacked_AE | <img src='./images/STACKED/grid_1.png' height='150px'> | <img src='./images/STACKED/grid_15.png' height='150px'> | <img src='./images/STACKED/grid_30.png' height='150px'>
-Conv_AE | <img src='./images/Conv/grid_1.png' height='150px'> | <img src='./images/Conv/grid_15.png' height='150px'> | <img src='./images/Conv/grid_30.png' height='150px'>
+Conv_AE | <img src='./images/CONV/grid_1.png' height='150px'> | <img src='./images/CONV/grid_15.png' height='150px'> | <img src='./images/CONV/grid_30.png' height='150px'>
 Sparse_AE | <img src='./images/SPARSE/grid_1.png' height='150px'> | <img src='./images/SPARSE/grid_15.png' height='150px'> | <img src='./images/SPARSE/grid_30.png' height='150px'>
 Denoising_AE | <img src='./images/DENOISING/grid_1.png' height='150px'> | <img src='./images/DENOISING/grid_15.png' height='150px'> | <img src='./images/DENOISING/grid_30.png' height='150px'>
 
