@@ -42,8 +42,8 @@ if __name__ == "__main__":
         sys.exit()
 
     # ...........................................
-    data_path   = '../data/MNIST/train_data/'       # training data location (see README)
-    model_path  = 'models/'+model+'_MNIST/'         # specify where you wanna save your model
+    data_path   = 'data/MNIST/train_data/'       # training data location (see README)
+    model_path  = 'models/'+model+'_MNIST/'      # specify where you wanna save your model
 
     # ...........................................
     image_size = 32
