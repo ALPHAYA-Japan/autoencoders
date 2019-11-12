@@ -68,13 +68,12 @@ if __name__ == "__main__":
                                  samples    = 20,
                                  grid_width = 480,
                                  grid_height= 240,
-                                 destination= 'images/'+model+'/grid.png'
-                                 )
+                                 destination= 'images/'+model+'/grid.png')
         elif len(sys.argv) == 4:
-            autoencoder = models[model](model_path = model_path)
+            autoencoder = models[model](model_path = model_path,
+                                        image_size = image_size)
             autoencoder.generate(source     = sys.argv[3],
-                                 destination= 'images/'+model+'/grid.png'
-                                 )
+                                 destination= 'images/'+model+'/grid.png')
         else:
             print("command 1: python train.py AE_type train")
             print("command 2: python train.py AE_type generate")
