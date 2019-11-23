@@ -5,9 +5,9 @@ Collection of autoencoder models, e.g. Vanilla, Stacked, Sparse in Tensorflow.
 <img src='./figures/AE_structure.png' height='240px'>
 
 ## How to use?
-- Command 1: `python train.py train`  
-- Command 2: `python train.py generate`  
-- Command 3: `python train.py generate path/to/image`  
+- Command 1: `python train.py ae_name train`  
+- Command 2: `python train.py ae_name generate`  
+- Command 3: `python train.py ae_name generate path/to/image`  
 
 Note: Generated samples will be stored in `images/{ae_model}/` directory during training.
 
@@ -47,7 +47,7 @@ We did not mean to implement what have been described in each paper.
 #### Results for MNIST
 The following results can be reproduced with command:  
 ```
-python train.py train
+python train.py ae_name train
 ```
 Note: 1st and 3rd rows represent the ground truth whereas the 2nd and 4th rows are the generated ones.
 
