@@ -1,6 +1,6 @@
 
 # AutoEncoder Models
-Collection of autoencoder models, e.g. Vanilla, Stacked, Sparse in Tensorflow.  
+A collection of autoencoder models, e.g. Vanilla, Stacked, Sparse in Tensorflow.  
 
 <img src='./figures/AE_structure.png' height='240px'>
 
@@ -15,7 +15,7 @@ Note: Generated samples will be stored in `images/{ae_model}/` directory during 
 
 #### Traditional Autoencoders
 The following papers are just examples on how to use the implemented autoencoders.  
-We did not mean to implement what have been described in each paper.
+We did not mean to implement what have been described in each paper in details.
 
 - Vanilla AutoEncoder
 	- [Learning Internal Representations by Error Propagation, 1986](https://web.stanford.edu/class/psych209a/ReadingsByDate/02_06/PDPVolIChapter8.pdf)
@@ -38,11 +38,11 @@ We did not mean to implement what have been described in each paper.
 
 *AutoEncoder* | *Loss Function*
 :---: | :--- |
-**Vanilla_AE** 	| <img src='./figures/equations/Vanilla_AE.png' height='50px'>
-**Stacked_AE**	| <img src='./figures/equations/Vanilla_AE.png' height='50px'>
-**Conv_AE**		| <img src='./figures/equations/Vanilla_AE.png' height='50px'>
-**Sparse_AE**	| <img src='./figures/equations/Sparse_AE.png' height='50px'>
-**Denoising_AE**	| <img src='./figures/equations/Vanilla_AE.png' height='50px'>
+**Vanilla_AE** 	| <img src='./figures/equations/AE_loss.png' height='50px'>
+**Stacked_AE**	| <img src='./figures/equations/AE_loss.png' height='50px'>
+**Conv_AE**		| <img src='./figures/equations/AE_loss.png' height='50px'>
+**Denoising_AE**| <img src='./figures/equations/AE_loss.png' height='50px'>
+**Sparse_AE**	| <img src='./figures/equations/SparseAE_loss.png' height='50px'>
 
 #### Results for MNIST
 The following results can be reproduced with command:  
@@ -73,29 +73,17 @@ Denoising_AE | <img src='./images/DENOISING/grid_1.png' height='150px'> | <img s
 If you wanna try new dataset, please make sure you make it in the following way:
 - Dataset_main_directory
 	- train_data
-		- category_1:
-			- image1
-			- image2
-			- ...
-		- category_2:
-			- image1
-			- image2
-			- ...
+		- category_1: (image1, image2, ...)
+		- category_2: (image1, image2, ...)
 		- ...
 	- test_data
-		- category_1:
-			- image1
-			- image2
-			- ...
-		- category_2:
-			- image1
-			- image2
-			- ...
+		- category_1: (image1, image2, ...)
+		- category_2: (image1, image2, ...)
 		- ...
 The `loader.py` file will automatically upload all images and their labels (category_i folders)
 
 ## Acknowledgements
-This implementation has been based on the work of the great giants:
+This implementation has been based on the work of the following great repositories:
 - https://github.com/hwalsuklee/tensorflow-generative-model-collections
 - https://github.com/wiseodd/generative-models
 - https://github.com/eriklindernoren/Keras-GAN
